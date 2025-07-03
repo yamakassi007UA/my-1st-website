@@ -1,0 +1,161 @@
+body, ul, li, h1, a{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+}
+header{
+    background-color:blueviolet;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top:0;
+    left:0;
+}
+header h1{
+    color:white;
+    border:8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 20px;
+}
+nav{
+    background-color:#9d9da3;
+    padding: 20px;
+    position: sticky;
+    top: 104px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width:25%;
+    display: inline-block;
+    font-size: 24px; 
+    text-align: center;
+}
+nav li a{
+    text-decoration: none;
+    color: brown;
+}
+nav li a.join{
+    color:#eee016;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+max-width: 100%;
+width: 100vw;
+height: 50vw;
+display: block;
+}
+.banner .welcome{
+position: absolute;
+left: 0%;
+top:25%;
+color: red;
+padding: 50px;
+background-color: #eeaa16;
+}
+.banner h2{
+    font-size: 40px;
+}
+.banner h2 span{
+  font-size: 1.9em;  
+  color: blue;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+article h2{
+    color: #f63232;
+    font-size: 48px;
+}
+article p{
+    color: #3824ec;
+    font-size: 24px;
+}
+.images{
+    text-align: center;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+    
+}
+.images li img{
+    max-width: 100%;
+}
+section.join{
+    background-color:#eee016;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+.join h2{
+    font-size: 36px;
+
+}
+.join p{
+    font-size: 18px;
+    color:#3824ec;  
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid red;
+}
+footer{
+    background:#eeaa16;
+    color: #3824ec;
+    padding: 10px;
+    text-align: center;
+}
+/*pseudo classes*/
+nav li a:hover{
+    text-decoration: underline;
+}
+.images li:hover{
+    position:relative;
+    top: -4px;
+}
+form input:focus{
+    border: 4px dashed blue;
+    outline: none;
+}
+form input:valid{
+    border: 4px solid #41d300;
+}
+nav li:first-child{
+    border: 4px solid #71d300;
+}
+article p::first-line{
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Times New Roman';
+}
+section p::first-letter{
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Times New Roman';
+}
+p::selection{
+    background-color: red;
+    color:black;
+}
+p::after{
+    content: '...';
+}
